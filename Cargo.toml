@@ -1,0 +1,20 @@
+[package]
+name = "bugspots"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "bugspots"
+path = "src/lib.rs"
+
+[[bin]]
+name = "bugspots"
+path = "src/bin.rs"
+
+[dependencies]
+git2 = "0.13"
+time = "0.1"
+structopt = { version = "0.3", default-features = false }
+regex = "1"
